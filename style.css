@@ -1,0 +1,135 @@
+/* color principal:FED500 */
+/* 634FE7 */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FED500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    background-color: #fff;
+    width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 6px 11px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+.content{
+    display: flex;
+    justify-content: space-around;
+}
+.image-content{
+    width: 90px;
+    height: 90px;
+    
+}
+.image img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
+.nav{
+    display: flex;
+    justify-content: space-around;
+}
+.image{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.container .icon-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+    
+}
+.info{
+    margin-top: 20px;
+}
+.info h1, p{
+    color: #634FE7;
+    cursor: pointer;
+}
+.container .info p{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.icon-right i{
+    color: #634FE7;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.container .icon-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    cursor: pointer;
+    
+}
+.icon-left i{
+    margin: 20px;
+    font-size: 1.5rem;
+    color: #634FE7;
+} 
+
+.menu{
+    cursor: pointer;
+    position: absolute;
+    right: 130px;
+    top: 150px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 270px;
+    height: 270px;
+    border-radius: 10px;
+    color: #634FE7;
+    opacity: 0;
+    
+}
+.menu i{
+    margin-top: 30px;
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    
+    
+}
+
+.menu span{
+    margin-left: 20px;
+}
+.menu::before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border-color: 10px solid;
+    border-color: red pink black green;
+    background-color: rgb(255, 255, 255);
+    transform: rotate(45deg);
+    
+}
+.nav.active .menu{
+    opacity: 1;
+}
